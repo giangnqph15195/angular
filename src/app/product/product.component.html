@@ -1,0 +1,16 @@
+<p>products works!</p>
+<table class="table table-bordered">
+    <tbody>
+        <tr *ngFor="let product of productList; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>
+                <button class="btn btn-info" (click)="onShow(product.id)">Info</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div *ngIf="showproduct">
+    {{ showproduct.name }}
+</div>
