@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import moskdata from 'src/data.';
 
 @Component({
   selector: 'app-root',
@@ -21,25 +22,10 @@ export class AppComponent {
     price:250
   }
 
-  productList : {id:number, name: string, price: number, status: boolean}[] = [
-    {
-      id:1,
-      name:"Product 1",
-      price: 150,
-      status: false
-    },
-    {
-      id:2,
-      name:"Product 2",
-      price: 2222,
-      status: true
-    },{
-      id:3,
-      name:"Product 3",
-      price: 3333,
-      status: false
-    },
-  ]
+  productList : {id:number, name: string, price: number, status: boolean}[] = moskdata
+  // productListsss : {id:number, name: string, price: number, status: boolean}[] = []
+
+
   onHandleClick(){
     this.productsStatus= !this.productsStatus
   }

@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './product/product.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { DetailPDComponent } from './detail-pd/detail-pd.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,12 +18,14 @@ import { ProductAddComponent } from './product-add/product-add.component';
     HeaderComponent,
     FooterComponent,
     ProductComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    DetailPDComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { MyserviceService } from 'src/service/myservice.service';
 
 
 @Component({
@@ -7,17 +8,17 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./product-add.component.css']
 })
 export class ProductAddComponent implements OnInit {
-  @Output() onAdd = new EventEmitter()
-  constructor() { }
-
-  ngOnInit(): void {
-  }
   product: { name: string, price: number } = {
     name: "",
     price: 0
   }
+  constructor(private addpdser : MyserviceService) { }
+
+  ngOnInit(): void {
+  }
+  
   onSubmit(){
     console.log(this.product)
-    this.onAdd.emit(this.product)
+    this.addpdser.addproduct(this.product)
   }
 }

@@ -6,7 +6,7 @@
             <td>{{ product.name }}</td>
             <td>{{ product.price }}</td>
             <td>
-                <button class="btn btn-info" (click)="onShow(product.id)">Info</button>
+                <button class="btn btn-info" (click)="onShow(product.id)"><a href="products/{{product.id}}">Info</a></button>
             </td>
         </tr>
     </tbody>

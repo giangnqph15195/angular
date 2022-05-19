@@ -1,75 +1,7 @@
-<!-- <app-header [data]="myName"></app-header> -->
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/products">products</a>
-          </li>
-          
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+<app-header></app-header>
 <router-outlet></router-outlet>
-<p>{{productName}}</p>
-<p>{{productprice}}</p>
-<p>{{productsStatus}}</p>
- <hr>
-
-
- <p>{{productsInfor.name}} ------ {{productsInfor.price}}</p>
-
- <hr>
- <button (click)="onHandleClick()">Click</button>
- <!-- <form action="">
-  <input type="text" value="{{title}}" (keypress)="onHandleKey($event)">
-  <input type="text" value="{{price}}">
-  {{title}}
-</form>  -->
-
-<form action="" #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)">
-  <input type="text" [(ngModel)]="title" value="{{title}}"> {{title}}
-  <input type="text" [(ngModel)]="price" value="{{price}}"> {{price}}
-  <input type="submit" value="submit">
-  <!-- <input type="text" [(ngModel)]="" value="{{title}}"> {{title}} -->
-</form>
-<div *ngIf="productsStatus">
-  <!-- <table class="table">
-    <tbody>
-      <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Status</th>
-      </tr>
-    </tbody>
-    <tr *ngFor="let product of productList; let i = index">
-      <td>{{i+1}}</td>
-      <td>{{product.name}}</td>
-      <td>{{product.price}}</td>
-      <td>{{product.status}}</td>
-      <td><button (click)="deleteitem(product.id)">Delete</button></td>
-
-    </tr>
-  </table> -->
-  <app-product [data]="productList"></app-product>
-
+<!-- <app-product></app-product> -->
  
-</div>
-<hr>
-<hr>
-<app-product-add (onAdd)="onHandlAdd($event)"></app-product-add>
+<!-- </div> -->
+<!-- <app-product-add (onAdd)="onHandlAdd($event)"></app-product-add> -->
 <app-footer></app-footer>
