@@ -1,0 +1,7 @@
+<p>product-edit works!</p>
+<app-product></app-product>
+<form action="" (ngSubmit)="onSubmit()">
+    <input type="text" [(ngModel)]="product.name" name="name">
+    <input type="text" [(ngModel)]="product.price" name="price">
+    <button>Add</button>
+</form>

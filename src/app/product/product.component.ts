@@ -10,19 +10,26 @@ export class ProductComponent implements OnInit {
   // @Input('data') productList!: {id:number, name: string, price: number, status: boolean}[]
   showproduct! : { id:number,name :string, price : number} | undefined
   productList!: any
-  constructor(private productSe : MyserviceService) {
-    this.getPD()
+  constructor(private productservice : MyserviceService) {
+   
    }
 
   ngOnInit(): void {
+    this.getPD()
   }
   getPD(){
-    this.productSe.getProducts().subscribe(data => {
+    this.productservice.getProducts().subscribe(data => {
       this.productList = data
     }) 
   }
-  onShow(id : number){
-    // this.showproduct = this.productList.find(item =>item.id == id!)
+ 
+  remove(id: number){
+    const confirm = window.confirm("bạn có muốn xóa")
+    if(confirm){
+      this.productservice.removeProduct(id).subscribe(data =>{
+        console.log("Xoa thanh công")
+      })
+    }
   }
 
 }

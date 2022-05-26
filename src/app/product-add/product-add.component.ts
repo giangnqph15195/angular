@@ -12,13 +12,16 @@ export class ProductAddComponent implements OnInit {
     name: "",
     price: 0
   }
-  constructor(private addpdser : MyserviceService) { }
+  constructor(private productservice : MyserviceService) { }
 
   ngOnInit(): void {
   }
   
   onSubmit(){
     console.log(this.product)
-    this.addpdser.addproduct(this.product)
+    this.productservice.addproduct(this.product).subscribe(data => {
+      console.log("Thêm thành công")
+    })
   }
+ 
 }

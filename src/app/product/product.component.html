@@ -6,11 +6,15 @@
             <td>{{ product.name }}</td>
             <td>{{ product.price }}</td>
             <td>
-                <button class="btn btn-info" (click)="onShow(product.id)"><a href="products/{{product.id}}">Info</a></button>
+                <a href="products/{{product.id}}">Info</a>
             </td>
+            <td>
+                <a href="product/edit/{{product.id}}">edit</a>
+            </td>
+            <td><button class="btn btn-info" (click)="remove(product.id)">Delete</button> </td>
         </tr>
     </tbody>
 </table>
-<div *ngIf="showproduct">
+<!-- <div *ngIf="showproduct">
     {{ showproduct.name }}
-</div>
+</div> -->

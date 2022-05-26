@@ -10,6 +10,9 @@ import { ProductComponent } from './product/product.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { DetailPDComponent } from './detail-pd/detail-pd.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MyserviceService } from 'src/service/myservice.service';
+import { RouterModule } from '@angular/router';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 
 @NgModule({
@@ -19,13 +22,15 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     ProductComponent,
     ProductAddComponent,
-    DetailPDComponent
+    DetailPDComponent,
+    ProductEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

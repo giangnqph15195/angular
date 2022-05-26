@@ -15,7 +15,9 @@ export class DetailPDComponent implements OnInit {
     ) {
     const id =  this.router.snapshot.paramMap.get('id')!
     console.log(id)
-   this.productDetail = this.pdetailser.getProduct(+id)!
+      this.pdetailser.getProduct(+id).subscribe(data => {
+        this.productDetail = data
+      })
    }
 
   ngOnInit(): void {
