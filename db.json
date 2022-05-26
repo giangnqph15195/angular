@@ -14,13 +14,18 @@
     },
     {
       "id": 3,
-      "name": "Product 3",
+      "name": "Product 3 update",
       "price": 3333,
       "status": false
     },
     {
-      "name": "Product A1111eqweqw",
-      "price": "0111",
+      "name": "Giang 69 update ",
+      "price": "02222",
+      "id": 4
+    },
+    {
+      "name": "Product A update",
+      "price": "02222",
       "id": 5
     }
   ]

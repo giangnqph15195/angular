@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MyserviceService } from 'src/service/myservice.service';
 
 @Component({
@@ -15,7 +15,8 @@ export class ProductEditComponent implements OnInit {
   }
   constructor(
     private route : ActivatedRoute,
-    private productservice : MyserviceService
+    private productservice : MyserviceService,
+    private router : Router
     ) { 
       const id = +this.route.snapshot.paramMap.get("id")!
       console.log(id)
@@ -31,6 +32,9 @@ export class ProductEditComponent implements OnInit {
     if(id){
       this.productservice.updateProduct(this.product).subscribe(data => {
         console.log("Sửa thành công")
+        setTimeout(()=>{
+          this.router.navigateByUrl('/products')
+        },1500)
       })
     }
   }

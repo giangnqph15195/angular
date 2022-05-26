@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MyserviceService } from 'src/service/myservice.service';
+import { IProduct } from '../Products';
 
 @Component({
   selector: 'app-product',
@@ -7,11 +8,9 @@ import { MyserviceService } from 'src/service/myservice.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  // @Input('data') productList!: {id:number, name: string, price: number, status: boolean}[]
-  showproduct! : { id:number,name :string, price : number} | undefined
-  productList!: any
+  productList!: IProduct[] |any
   constructor(private productservice : MyserviceService) {
-   
+  
    }
 
   ngOnInit(): void {
@@ -28,6 +27,7 @@ export class ProductComponent implements OnInit {
     if(confirm){
       this.productservice.removeProduct(id).subscribe(data =>{
         console.log("Xoa thanh công")
+        // this.productList = this.productList.filter(item => item.id !== id);
       })
     }
   }
