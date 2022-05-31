@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyserviceService } from 'src/service/myservice.service';
 import { RouterModule } from '@angular/router';
 import { ProductEditComponent } from './product-edit/product-edit.component';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
     ProductComponent,
     ProductAddComponent,
     DetailPDComponent,
-    ProductEditComponent
+    ProductEditComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

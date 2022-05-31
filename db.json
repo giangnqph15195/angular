@@ -28,5 +28,25 @@
       "price": "02222",
       "id": 5
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Giang 69",
+      "email": "abc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "email": "giang113@gmail.com",
+      "password": "$2a$10$.N85r.eYOGH/481ui2ZQZejOAVW.Rf/OnEs.xzD7zmEUqpDURqNty",
+      "name": "Giang 69",
+      "id": 2
+    },
+    {
+      "email": "giangqu13579@gmail.com",
+      "password": "$2a$10$lXMKI4TwPSBUsSrFPq3ZNOYn1/0GqpDrObct5EEZbTEx4O8VTbZIy",
+      "name": "Product A",
+      "id": 3
+    }
   ]
 }

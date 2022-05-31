@@ -5,6 +5,8 @@ import { ProductAddComponent } from './product-add/product-add.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 // import { HeaderComponent } from './header/header.component';
 import { ProductComponent } from './product/product.component';
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {path :"products",
@@ -20,6 +22,14 @@ const routes: Routes = [
 {
   path: 'product/edit/:id',
   component: ProductEditComponent
+},
+{
+  path: 'signup',
+  component: SignupComponent
+},
+{
+  path:"signin",
+  component: SigninComponent
 }
 ];
 
