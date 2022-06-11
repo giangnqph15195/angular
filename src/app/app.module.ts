@@ -15,6 +15,9 @@ import { RouterModule } from '@angular/router';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
+import { LayoutsAdminComponent } from './layuots/layuot-admin/layouts-admin/layouts-admin.component';
+import { LayuotsWebComponent } from './layuots/layuot-web/layuots-web/layuots-web.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { SigninComponent } from './signin/signin.component';
     DetailPDComponent,
     ProductEditComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    LayoutsAdminComponent,
+    LayuotsWebComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
