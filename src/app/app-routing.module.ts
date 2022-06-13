@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminGuard } from 'src/service/guard/admin.guard';
 import { BlogpageComponent } from './blogpage/blogpage.component';
+import { CategoryWorkComponent } from './category-work/category-work.component';
 import { DetailPDComponent } from './detail-pd/detail-pd.component';
 import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
       {
         path: "works/:id/detail",
         component: WorkDetailComponent
+      },
+      {
+        path: "category/:id",
+        component: CategoryWorkComponent
       },
       {
         path: "work",

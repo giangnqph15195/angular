@@ -24,7 +24,7 @@ export class WorkpageComponent implements OnInit {
   }
   getcate(){
     this.worksv.getcategory().subscribe(data =>{
-
+      this.categories= data
     })
   }
 
