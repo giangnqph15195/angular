@@ -20,6 +20,7 @@ import { LayuotsWebComponent } from './layuots/layuot-web/layuots-web/layuots-we
 import { HomepageComponent } from './homepage/homepage.component';
 import { BlogpageComponent } from './blogpage/blogpage.component';
 import { WorkpageComponent } from './workpage/workpage.component';
+import { CategoryWorkComponent } from './category-work/category-work.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { WorkpageComponent } from './workpage/workpage.component';
     LayuotsWebComponent,
     HomepageComponent,
     BlogpageComponent,
-    WorkpageComponent
+    WorkpageComponent,
+    CategoryWorkComponent
   ],
   imports: [
     BrowserModule,

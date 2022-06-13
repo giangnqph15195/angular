@@ -7,12 +7,18 @@ import { Iworks } from 'src/app/model/works';
   providedIn: 'root'
 })
 export class WorkserviceService {
-  url : string ="http://localhost:3001/works"
+  url : string ="http://localhost:3001/"
   constructor(private http : HttpClient) { }
   getworks(){
-    return this.http.get(`${this.url}`)
+    return this.http.get(`${this.url}works`)
   }
   getwork(id: number): Observable<Iworks>{
-    return this.http.get<Iworks>(`${this.url}/${id}`)
+    return this.http.get<Iworks>(`${this.url}works/${id}`)
+  }
+  getcategory(){
+    return this.http.get(`${this.url}categories`)
+  }
+  category(id: number){
+    return this.http.get(`${this.url}categories/${id}?_embed=works`)
   }
 }
