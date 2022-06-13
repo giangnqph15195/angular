@@ -1,11 +1,12 @@
 <p>product-add works!</p>
-<app-product></app-product>
 <form #formAdd="ngForm" action="" (ngSubmit)="onSubmit()">
-    <input type="text" [(ngModel)]="product.name" name="name" #name="ngModel" required minlength="5">
+    <div><input type="text" [(ngModel)]="product.name" name="name" #name="ngModel" required minlength="5"></div>
     <div *ngIf="name.errors?.['required'] && (name.dirty || name.touched)">Name is required</div>
     <div *ngIf="name.errors?.['minlength'] && (name.dirty || name.touched)">Name minlength</div>
-    <input type="text" [(ngModel)]="product.image" name="image">
-    <input type="text" [(ngModel)]="product.desc" name="desc">
+    <div><input type="text" [(ngModel)]="product.image" name="image" #image="ngModel" required></div>
+    <div *ngIf="image.errors?.['required'] && (name.dirty || name.touched)">Name is required</div>
+    <div><input type="text" [(ngModel)]="product.desc" name="desc" #desc="ngModel" required></div>
+    <div *ngIf="desc.errors?.['required'] && (name.dirty || name.touched)">Name is required</div>
 
     <button>Add</button>
 </form>

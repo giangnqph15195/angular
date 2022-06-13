@@ -13,6 +13,7 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductComponent } from './product/product.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { WorkDetailComponent } from './work-detail/work-detail.component';
 import { WorkpageComponent } from './workpage/workpage.component';
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
       {
         path: "blog",
         component: BlogpageComponent
+      },
+      {
+        path: "works/:id/detail",
+        component: WorkDetailComponent
       },
       {
         path: "work",

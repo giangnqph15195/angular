@@ -5,6 +5,12 @@
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
       "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
       "id": 9
+    },
+    {
+      "name": "Giang 14432132",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1649084801/asm/ltkyi6m8mrypop4bhfom.jpg",
+      "desc": "      \"content\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloribus, veniam laborum quo dolores ducimus fuga est! Ullam iure illum, consequuntur rerum, laboriosam fuga porro praesentium sit fugiat quod magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloribus, veniam laborum quo dolores ducimus fuga est! Ullam iure illum, consequuntur rerum, laboriosam fuga porro praesentium sit fugiat quod magni",
+      "id": 10
     }
   ],
   "users": [
@@ -19,6 +25,14 @@
       "password": "$2a$10$lXMKI4TwPSBUsSrFPq3ZNOYn1/0GqpDrObct5EEZbTEx4O8VTbZIy",
       "name": "Product A",
       "id": 2
+    }
+  ],
+  "works": [
+    {
+      "id": 1,
+      "name": "Font- end",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
+      "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ."
     }
   ]
 }

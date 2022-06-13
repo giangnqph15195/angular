@@ -33,16 +33,16 @@
     <div>
         <p class="text-[18px] mt-[20px] mb-[20px]">Featured works</p>
     </div>
-    <div class="flex">
-        <div class="w-[25%] mt-[10px]"><img class="w-[196px] h-[145px] rounded-md" src="" alt=""></div>
+    <div class="flex" *ngFor="let work of worklist ">
+        <div class="w-[25%] mt-[10px]"><img class="w-[196px] h-[145px] rounded-md" src="{{work.image}}" alt=""></div>
         <div class="w-[75%] ml-[12px]">
-            <h1 class="text-[23px] font-bold text-[#142850]">Designing Dashboards</h1>
-            <button class="bg-[#142850] rounded-xl text-white font-bold text-center px-[7px] mt-[15px]">2020</button> <span class="ml-[15px]">Dashboard</span>
-            <p class="text-[13px] w-[470px] mt-[15px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <h1 class="text-[23px] font-bold text-[#142850]">{{work.name}}</h1>
+            <button class="bg-[#142850] rounded-xl text-white font-bold text-center px-[7px] mt-[15px]">2020</button> <span class="ml-[15px]"><a href="works/{{work.id}}/detail">Dashboard</a></span>
+            <p class="text-[13px] w-[470px] mt-[15px]">{{work.desc}}</p>
         </div>
     </div>
     <hr class="my-[20px] w-[690px]">
-    <div class="flex">
+    <!-- <div class="flex">
         <div class="w-[25%] mt-[10px]"><img class="w-[196px] h-[145px] rounded-md" src="https://res.cloudinary.com/dkrifqhuk/image/upload/v1645077420/asm/o5wqm1zuzuofhcdjyfje.jpg" alt=""></div>
         <div class="w-[75%] ml-[12px]">
             <h1 class="text-[23px] font-bold text-[#142850] mt-[15px]">Vibrant Portraits Of 2020</h1>
@@ -59,5 +59,5 @@
             <p class="text-[13px] w-[470px] mt-[15px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
     </div>
-    <hr class="my-[20px] w-[690px]">
+    <hr class="my-[20px] w-[690px]"> -->
 </div>

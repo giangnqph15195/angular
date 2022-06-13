@@ -1,12 +1,12 @@
 <div class="ml-[93px]">
     <h1 class="font-bold text-[33px] mt-[80px] mb-[40px]">Blog</h1>
-    <div class="w-[500px]">
-        <h1 class="font-bold text-[23px]">UI Interaction of the week</h1>
+    <div class="w-[500px]" *ngFor="let blog of bloglist">
+        <h1 class="font-bold text-[23px]">{{blog.name}}</h1>
         <p class="mt-[5px]">12 Feb 2019 <span class="mx-[15px]">|</span><span>Express, Handlebars</span></p>
-        <p class="text-[13px] mt-[8px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <p class="text-[13px] mt-[8px]">{{blog.desc}}</p>
     </div>
     <hr class="w-[550px] mt-[20px] mb-[22px]">
-    <div class="w-[500px]">
+    <!-- <div class="w-[500px]">
         <h1 class="font-bold text-[23px]">UI Interaction of the week</h1>
         <p class="mt-[5px]">12 Feb 2019 <span class="mx-[15px]">|</span><span>Express, Handlebars</span></p>
         <p class="text-[13px] mt-[8px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -22,6 +22,6 @@
         <p class="mt-[5px]">12 Feb 2019 <span class="mx-[15px]">|</span><span>Express, Handlebars</span></p>
         <p class="text-[13px] mt-[8px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
     </div>
-    <hr class="w-[550px] mt-[30px] mb-[22px]">
+    <hr class="w-[550px] mt-[30px] mb-[22px]"> -->
     
 </div>
