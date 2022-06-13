@@ -2,5 +2,6 @@ export interface Iworks {
     id? : number,
     name:string,
     image:string,
-    desc: string
+    desc: string,
+    categoryId?:string
 }

@@ -21,4 +21,10 @@ export class WorkserviceService {
   category(id: number){
     return this.http.get(`${this.url}categories/${id}?_embed=works`)
   }
+  removework(id:number){
+    return this.http.delete(`${this.url}works/${id}`)
+  }
+  addwork(works: Iworks){
+    return this.http.post(`${this.url}works`,works)
+  }
 }

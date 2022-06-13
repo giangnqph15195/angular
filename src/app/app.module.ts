@@ -21,6 +21,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { BlogpageComponent } from './blogpage/blogpage.component';
 import { WorkpageComponent } from './workpage/workpage.component';
 import { CategoryWorkComponent } from './category-work/category-work.component';
+import { AdminWorksComponent } from './admin-works/admin-works.component';
+import { AddWorksComponent } from './add-works/add-works.component';
+import { WorksEditComponent } from './works-edit/works-edit.component';
 
 
 @NgModule({
@@ -39,7 +42,10 @@ import { CategoryWorkComponent } from './category-work/category-work.component';
     HomepageComponent,
     BlogpageComponent,
     WorkpageComponent,
-    CategoryWorkComponent
+    CategoryWorkComponent,
+    AdminWorksComponent,
+    AddWorksComponent,
+    WorksEditComponent
   ],
   imports: [
     BrowserModule,

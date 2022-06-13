@@ -46,16 +46,10 @@
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
       "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
       "categoryId": "1"
-    },{
-      "id": 2,
-      "name": "Font- end 2",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
-      "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
-      "categoryId": "2"
     },
     {
-      "id": 3,
-      "name": "Font- end 3",
+      "id": 2,
+      "name": "Font- end 2",
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
       "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
       "categoryId": "2"
@@ -66,6 +60,13 @@
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
       "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
       "categoryId": "3"
+    },
+    {
+      "name": "Giang 69",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1648567795/asm/icon_douong_wbuknx.png",
+      "desc": "dsadsad",
+      "categoryId": "4",
+      "id": 5
     }
   ],
   "categories": [
