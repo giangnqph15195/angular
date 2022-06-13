@@ -18,6 +18,8 @@ import { SigninComponent } from './signin/signin.component';
 import { LayoutsAdminComponent } from './layuots/layuot-admin/layouts-admin/layouts-admin.component';
 import { LayuotsWebComponent } from './layuots/layuot-web/layuots-web/layuots-web.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { BlogpageComponent } from './blogpage/blogpage.component';
+import { WorkpageComponent } from './workpage/workpage.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { HomepageComponent } from './homepage/homepage.component';
     SigninComponent,
     LayoutsAdminComponent,
     LayuotsWebComponent,
-    HomepageComponent
+    HomepageComponent,
+    BlogpageComponent,
+    WorkpageComponent
   ],
   imports: [
     BrowserModule,

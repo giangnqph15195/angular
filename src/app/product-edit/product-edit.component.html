@@ -1,7 +1,13 @@
 <p>product-edit works!</p>
 <app-product></app-product>
 <form action="" (ngSubmit)="onSubmit()">
-    <input type="text" [(ngModel)]="product.name" name="name">
-    <input type="text" [(ngModel)]="product.price" name="price">
+    <div><input type="text" [(ngModel)]="product.name" name="name"></div>
+    <img class="w-[150px]" src="{{product.image}}" alt="">
+<div>
+    <input type="text" [(ngModel)]="product.image" name="image">
+
+</div>    
+<input type="text" [(ngModel)]="product.desc" name="desc">
+<div></div>
     <button>Add</button>
 </form>

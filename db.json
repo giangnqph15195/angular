@@ -1,41 +1,13 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Product 1",
-      "price": 150,
-      "status": false
-    },
-    {
-      "id": 2,
-      "name": "Product 2",
-      "price": 2222,
-      "status": true
-    },
-    {
-      "id": 3,
-      "name": "Product 3 update",
-      "price": 3333,
-      "status": false
-    },
-    {
-      "name": "Giang 69 update ",
-      "price": "02222",
-      "id": 4
-    },
-    {
-      "name": "Product A update",
-      "price": "02222",
-      "id": 5
-    },
-    {
-      "name": "Giang 69",
-      "price": "0111",
-      "id": 6
+      "name": "sản phẩm mới nhất update 10 vạn lần",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
+      "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
+      "id": 9
     }
   ],
   "users": [
-   
     {
       "email": "giang113@gmail.com",
       "password": "$2a$10$.N85r.eYOGH/481ui2ZQZejOAVW.Rf/OnEs.xzD7zmEUqpDURqNty",

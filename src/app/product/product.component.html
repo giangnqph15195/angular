@@ -1,15 +1,17 @@
 <p>products works!</p>
+<button class="btn btn-info float-right mr-[20px] my-[20px]" ><a href="admin/products/add">Add</a></button>
 <table class="table table-bordered">
     <tbody>
         <tr *ngFor="let product of productList; let i = index">
             <td>{{ i + 1 }}</td>
             <td>{{ product.name }}</td>
-            <td>{{ product.price }}</td>
+            <td><img src="{{ product.image }}" alt=""></td>
+            <td>{{ product.desc }}</td>
             <td>
-                <a href="products/{{product.id}}">Info</a>
+                <a href="admin/products/{{product.id}}">Info</a>
             </td>
             <td>
-                <a href="product/edit/{{product.id}}">edit</a>
+                <a href="admin/products/edit/{{product.id}}">edit</a>
             </td>
             <td><button class="btn btn-info" (click)="remove(product.id)">Delete</button> </td>
         </tr>

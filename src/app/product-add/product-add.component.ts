@@ -9,9 +9,10 @@ import { MyserviceService } from 'src/service/myservice.service';
   styleUrls: ['./product-add.component.css']
 })
 export class ProductAddComponent implements OnInit {
-  product: { name: string, price: number } = {
+  product: { name: string, image: string,desc:string } = {
     name: "",
-    price: 0
+    image: "",
+    desc: ""
   }
   constructor(
     private productservice : MyserviceService,
@@ -26,7 +27,7 @@ export class ProductAddComponent implements OnInit {
     this.productservice.addproduct(this.product).subscribe(data => {
       console.log("Thêm thành công")
       setTimeout(()=>{
-        this.router.navigateByUrl('/products')
+        this.router.navigateByUrl('admin/products')
       },1500)
       
     })

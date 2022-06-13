@@ -2,16 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MyserviceService } from 'src/service/myservice.service';
 
+import { IProduct } from '../model/Products';
+
 @Component({
   selector: 'app-product-edit',
   templateUrl: './product-edit.component.html',
   styleUrls: ['./product-edit.component.css']
 })
 export class ProductEditComponent implements OnInit {
-  product : {id?: number, name: string, price: number, status: boolean } = {
+  product : IProduct = {
     name: "",
-    price: 0,
-    status: true
+    image: "",
+    desc: "",
   }
   constructor(
     private route : ActivatedRoute,
@@ -33,7 +35,7 @@ export class ProductEditComponent implements OnInit {
       this.productservice.updateProduct(this.product).subscribe(data => {
         console.log("Sửa thành công")
         setTimeout(()=>{
-          this.router.navigateByUrl('/products')
+          this.router.navigateByUrl('admin/products')
         },1500)
       })
     }
