@@ -7,17 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   // @in
-  checkuser: any
+  // checkuser: any
+  dangxuat! : ""
   constructor() { }
   
   ngOnInit(): void {
-    this.checkuser = JSON.parse(localStorage.getItem('user') as string) 
-    console.log(this.checkuser)
+    this.dangxuat = JSON.parse(localStorage.getItem('user') as string) 
+    console.log(this.dangxuat)
   }
-//   users(){
-//     if(localStorage.getItem('user')){
-//      `<i class="fa-solid fa-right-from-bracket"></i>`
-//   }
+  removelocal(){
+    localStorage.removeItem('user')
+  }
+  users(){
+    if(localStorage.getItem('user')){
+     this.dangxuat
+  }
 
-// }
+}
 }
