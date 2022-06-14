@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MyserviceService } from 'src/service/myservice.service';
 import { ProfileService } from 'src/service/profile.service';
 import { WorkserviceService } from 'src/service/workservice.service';
+import { IProduct } from '../model/Products';
 import { Iworks } from '../model/works';
 
 @Component({
@@ -11,11 +13,13 @@ import { Iworks } from '../model/works';
 export class HomepageComponent implements OnInit {
   worklist ! :Iworks[] | any
   profile! : {name:string, image:string,cv: string, desc: string} | any
-  constructor(private worksv : WorkserviceService, private profilesv : ProfileService) {}
+  bloglist!: IProduct[] | any
+  constructor(private worksv : WorkserviceService, private profilesv : ProfileService, private blogsv : MyserviceService) {}
 
   ngOnInit(): void {
     this.getworks()
     this.getprofile()
+    this.getblog()
   }
   getworks(){
     this.worksv.getworks().subscribe(data=>{
@@ -26,6 +30,11 @@ export class HomepageComponent implements OnInit {
       this.profilesv.getprodile().subscribe(data=>{
         this.profile = data
       })
+  }
+  getblog(){
+    this.blogsv.getlimit().subscribe(data =>{
+      this.bloglist = data
+    })
   }
 
 }

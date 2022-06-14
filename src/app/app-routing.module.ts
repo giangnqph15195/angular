@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminGuard } from 'src/service/guard/admin.guard';
 import { AddWorksComponent } from './add-works/add-works.component';
 import { AdminWorksComponent } from './admin-works/admin-works.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 // import { AdminWorksComponent } from './admin-works/admin-works.component';
 import { BlogpageComponent } from './blogpage/blogpage.component';
 import { CategoriesComponent } from './categories/categories.component';
@@ -35,6 +36,9 @@ const routes: Routes = [
       {
         path: "blog",
         component: BlogpageComponent
+      },{
+        path: "blog/:id",
+        component: BlogDetailComponent
       },
       {
         path: "works/:id/detail",

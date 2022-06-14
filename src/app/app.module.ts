@@ -25,6 +25,7 @@ import { AdminWorksComponent } from './admin-works/admin-works.component';
 import { AddWorksComponent } from './add-works/add-works.component';
 import { WorksEditComponent } from './works-edit/works-edit.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { CategoriesComponent } from './categories/categories.component';
     AdminWorksComponent,
     AddWorksComponent,
     WorksEditComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,
