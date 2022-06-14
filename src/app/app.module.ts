@@ -26,6 +26,7 @@ import { AddWorksComponent } from './add-works/add-works.component';
 import { WorksEditComponent } from './works-edit/works-edit.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { CategoryAddComponent } from './category-add/category-add.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { BlogDetailComponent } from './blog-detail/blog-detail.component';
     AddWorksComponent,
     WorksEditComponent,
     CategoriesComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    CategoryAddComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 // import { AdminWorksComponent } from './admin-works/admin-works.component';
 import { BlogpageComponent } from './blogpage/blogpage.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryWorkComponent } from './category-work/category-work.component';
 import { DetailPDComponent } from './detail-pd/detail-pd.component';
 import { HeaderComponent } from './header/header.component';
@@ -75,7 +76,8 @@ const routes: Routes = [
       {path: "works/add", component: AddWorksComponent},
       {path:"works/edit/:id", component: WorksEditComponent},
 
-      {path: "categories" , component : CategoriesComponent}
+      {path: "categories" , component : CategoriesComponent},
+      {path:"categories/add", component: CategoryAddComponent}
     ]
   },
 ];

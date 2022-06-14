@@ -1,0 +1,8 @@
+<p>category-add works!</p>
+<form #formAdd="ngForm" (ngSubmit)="onSubit()" action="">
+    <div>
+        <p>Name</p>
+        <input type="text" name="" [(ngModel)]="categories.name" name="name" #name="ngModel" required minlength="5">
+    </div>
+    <button class="btn btn-info">Add</button>
+</form>
