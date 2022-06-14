@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoriesService } from 'src/service/categories.service';
 // import { MyserviceService } from 'src/service/myservice.service';
 import { WorkserviceService } from 'src/service/workservice.service';
 
@@ -11,7 +12,7 @@ import { Icategory } from '../model/category';
 })
 export class CategoriesComponent implements OnInit {
   catelist!: Icategory[] | any
-  constructor(private catesv : WorkserviceService) { }
+  constructor(private catesv : WorkserviceService, private categories : CategoriesService) { }
 
   ngOnInit(): void {
     this.getcate()
@@ -21,8 +22,15 @@ export class CategoriesComponent implements OnInit {
       this.catelist = data
     })
   }
-  remove(){
+  remove(id: number){
     console.log("djasd")
+    const confirm = window.confirm("Bạn có muốn xóa không")
+    if(confirm){
+      this.categories.deletecate(id).subscribe(data=>{
+        console.log("xóa thành công")
+      })
+    }
+    
   }
 
 }

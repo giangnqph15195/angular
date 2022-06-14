@@ -1,0 +1,8 @@
+<p>categories-edit works!</p>
+<form action="" #formAdd="ngForm">
+    <div>
+        <p>Name</p>
+        <input type="text" [(ngModel)]="cate.name" name="name"  id="">
+    </div>
+    <button (click)="onSubmit()" class="btn btn-info">Edit</button>
+</form>

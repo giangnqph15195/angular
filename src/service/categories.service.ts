@@ -17,4 +17,7 @@ export class CategoriesService {
   deletecate(id: number){
     return this.http.delete(`${this.url}/${id}`)
   }
+  getcategory(id:number){
+    return this.http.get(`${this.url}/${id}`)
+  }
 }

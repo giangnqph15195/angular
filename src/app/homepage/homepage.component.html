@@ -1,4 +1,4 @@
-<div class="flex w-full">
+<div class="flex w-full col-sm-12">
     <div class="w-[67%]">
        <div class="mt-[135px] ml-[115px] ">
             <h1 class="font-bold text-[35px] mb-[14px] ">Hi, I am {{profile.name}}, <br> {{profile.cv}}</h1>
@@ -31,12 +31,12 @@
     </div> -->
 </div>
 <!-- LIST Products -->
-<div class="ml-[117px]">
+<div class="ml-[117px] .col-md-12">
     <div>
         <p class="text-[18px] mt-[20px] mb-[20px]">Featured works</p>
     </div>
     <div class="my-[20px]" *ngFor="let work of worklist ">
-        <a class="flex" href="works/{{work.id}}/detail">
+        <a class="flex .col-md-12" href="works/{{work.id}}/detail">
             <div class="w-[25%] mt-[10px]"><img class="w-[196px] h-[145px] rounded-md" src="{{work.image}}" alt=""></div>
             <div class="w-[75%] ml-[12px]">
                 <h1 class="text-[23px] font-bold text-[#142850]">{{work.name}}</h1>

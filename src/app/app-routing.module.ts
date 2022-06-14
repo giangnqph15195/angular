@@ -6,6 +6,7 @@ import { AdminWorksComponent } from './admin-works/admin-works.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 // import { AdminWorksComponent } from './admin-works/admin-works.component';
 import { BlogpageComponent } from './blogpage/blogpage.component';
+import { CategoriesEditComponent } from './categories-edit/categories-edit.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryWorkComponent } from './category-work/category-work.component';
@@ -77,7 +78,8 @@ const routes: Routes = [
       {path:"works/edit/:id", component: WorksEditComponent},
 
       {path: "categories" , component : CategoriesComponent},
-      {path:"categories/add", component: CategoryAddComponent}
+      {path:"categories/add", component: CategoryAddComponent},
+      {path:"categories/edit/:id", component: CategoriesEditComponent}
     ]
   },
 ];
