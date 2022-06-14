@@ -41,13 +41,6 @@
   ],
   "works": [
     {
-      "id": 1,
-      "name": "Font- end",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
-      "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
-      "categoryId": "1"
-    },
-    {
       "id": 2,
       "name": "Font- end 2",
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
@@ -56,7 +49,7 @@
     },
     {
       "id": 4,
-      "name": "Font- end 4",
+      "name": "Font- end 4 update",
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
       "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
       "categoryId": "3"
@@ -98,11 +91,11 @@
       "id": "4"
     }
   ],
-  "profile":{
-    "id":1 ,
-    "name":"Giang",
-    "image":"https://res.cloudinary.com/dkrifqhuk/image/upload/v1655185730/asm/241123593_245813547448231_984689905362080689_n_gyhid9.png",
+  "profile": {
+    "id": 1,
+    "name": "Giang",
+    "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1655185730/asm/241123593_245813547448231_984689905362080689_n_gyhid9.png",
     "cv": "Font-end Devloper",
-    "desc":"Nghèo nhất "
+    "desc": "Nghèo nhất "
   }
 }

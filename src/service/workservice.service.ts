@@ -18,6 +18,9 @@ export class WorkserviceService {
   getcategory(){
     return this.http.get(`${this.url}categories`)
   }
+  editwork(works : Iworks){
+    return this.http.put(`${this.url}works/${works.id}`, works)
+  }
   category(id: number){
     return this.http.get(`${this.url}categories/${id}?_embed=works`)
   }
