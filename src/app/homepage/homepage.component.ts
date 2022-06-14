@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileService } from 'src/service/profile.service';
 import { WorkserviceService } from 'src/service/workservice.service';
 import { Iworks } from '../model/works';
 
@@ -9,16 +10,22 @@ import { Iworks } from '../model/works';
 })
 export class HomepageComponent implements OnInit {
   worklist ! :Iworks[] | any
-
-  constructor(private worksv : WorkserviceService) { }
+  profile! : {name:string, image:string,cv: string, desc: string} | any
+  constructor(private worksv : WorkserviceService, private profilesv : ProfileService) {}
 
   ngOnInit(): void {
     this.getworks()
+    this.getprofile()
   }
   getworks(){
     this.worksv.getworks().subscribe(data=>{
       this.worklist = data
     })
+  }
+  getprofile(){
+      this.profilesv.getprodile().subscribe(data=>{
+        this.profile = data
+      })
   }
 
 }

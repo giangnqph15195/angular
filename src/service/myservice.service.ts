@@ -15,6 +15,9 @@ export class MyserviceService {
   getProducts(){
     return this.http.get(this.url)
   }
+  getlimit(){
+    return this.http.get(`${this.url}?_start=20&_limit=2`)
+  }
   getProduct(id: number): Observable<IProduct>{
     return this.http.get<IProduct>(`${this.url}/${id}`)
   }

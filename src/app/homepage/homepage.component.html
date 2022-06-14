@@ -1,12 +1,12 @@
 <div class="flex w-full">
     <div class="w-[67%]">
        <div class="mt-[135px] ml-[115px] ">
-            <h1 class="font-bold text-[35px] mb-[14px] ">Hi, I am John, <br> Creative Technologits</h1>
-            <p class="text-[13px] w-[420px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            <h1 class="font-bold text-[35px] mb-[14px] ">Hi, I am {{profile.name}}, <br> {{profile.cv}}</h1>
+            <p class="text-[13px] w-[420px]">{{profile.desc}}</p>
             <button class="bg-[#FF6464] text-center mt-[27px] text-[17px] px-[17px] py-[7px] text-white font-semibold">Dowload Resume</button>
        </div>
     </div>
-    <div class="w-[33%]"> <img class="w-[200px] h-[200px] mt-[122px] rounded-full ..." src="https://res.cloudinary.com/dkrifqhuk/image/upload/v1645077420/asm/o5wqm1zuzuofhcdjyfje.jpg" alt=""></div>
+    <div class="w-[33%]"> <img class="w-[200px] h-[200px] mt-[122px] rounded-full ..." src="{{profile.image}}" alt=""></div>
 </div>
 <!-- Recent posts -->
 <div class="mt-[55px] bg-[#EDF7FA] flex pb-[33px]">
