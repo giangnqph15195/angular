@@ -12,8 +12,14 @@ export class AdminGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     // ckeck!: Iuser;
-    return true;
-      
+    
+    const id = JSON.parse(localStorage.getItem("user") || '{}').user.id;
+    console.log(id)
+    if(id == 1){
+      return true;
+    }else{
+      return false
+    }
     // const users = JSON.parse(localStorage.getItem('user') as string);
     // console.log(users?.id)
     // console.log(users?.id!)
