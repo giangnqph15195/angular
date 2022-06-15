@@ -1,0 +1,8 @@
+@media (max-width:640px){
+    .footer{
+        width: 2000px;
+        float: left;
+        margin-left: 100px;
+        padding-left: 100px;
+    }
+}
