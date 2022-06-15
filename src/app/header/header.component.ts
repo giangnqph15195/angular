@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   // @in
+  status: boolean = true
   // checkuser: any
   dangxuat! : ""
   constructor() { }
@@ -23,5 +24,13 @@ export class HeaderComponent implements OnInit {
      this.dangxuat
   }
 
+}
+
+Clik(){
+  if(this.status){
+    this.status = !this.status
+  }else{
+    this.status = !this.status
+  }
 }
 }

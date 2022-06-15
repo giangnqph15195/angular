@@ -1,5 +1,8 @@
-<header  class=" w-full">
-  <ul class="flex mt-[17px] ml-[585px]">
+<header  class="container w-full">
+    <div class="logo" >
+      <button (click)="Clik()"><i class="fa-solid fa-indent text-[20px]"></i></button>
+  </div>
+  <ul class="list flex mt-[17px] ml-[585px]" [ngClass]="status ? 'block' : 'hidden' ">
       <li class="px-4 font-bold"><a href="/work">Works</a></li>
       <li class="px-2.5 font-bold"><a href="/blog">Blog</a></li>
       <li class="px-4 font-bold" ><a href="">Contact</a></li>

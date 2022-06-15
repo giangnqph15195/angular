@@ -1,0 +1,23 @@
+.logo{
+    display: none;
+}
+@media (max-width:640px) {
+    .logo{
+        display: block;
+        margin-left: 350px;
+    }
+    .list{
+        width: 100px;
+        background-color: aqua;
+        margin: 0px;
+        flex-direction: column;
+        margin-left: 250px;
+    }
+    .list li{
+        border: 1px solid black;
+    }
+    .container{
+        width: auto;
+    }
+    
+}
