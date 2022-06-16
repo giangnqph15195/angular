@@ -18,7 +18,7 @@
       <div class="text-[red] text-[14px]" *ngIf="pass.errors?.['required'] && (pass.dirty || pass.touched)">Mời bạn nhập</div>
       <div class="text-[red] text-[14px]" *ngIf="pass.errors?.['minlength'] && (pass.dirty || pass.touched)">Nhập hơn 5 ký tự</div>
     </div>
-    <div><p>Bạn có tài khoản thì mời bạn <a href="signin">Đăng Nhập</a></p></div>
+    <div><p class="text-center">Bạn có tài khoản thì mời bạn <a class="font-bold text-red-300" href="signin">Đăng Nhập</a></p></div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
