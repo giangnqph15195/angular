@@ -1,7 +1,7 @@
 <div class="container flex w-full col-sm-12">
     <div class="container-text w-[67%]">
        <div class="profile mt-[135px] ml-[115px] ">
-            <h1 class="font-bold text-[35px] mb-[14px] ">Hi, I am {{profile.name}}, <br> {{profile.cv}}</h1>
+            <h1 class="font-bold text-[35px] mb-[14px] ">Xin chào, Tôi tên {{profile.name}}, <br> {{profile.cv}}</h1>
             <p class="text-[13px] w-[420px]">{{profile.desc}}</p>
             <button class="bg-[#FF6464] text-center mt-[27px] text-[17px] px-[17px] py-[7px] text-white font-semibold">Dowload Resume</button>
        </div>
@@ -9,15 +9,17 @@
     <div class="w-[33%]"> <img class="imageprofile w-[200px] h-[200px] mt-[122px] rounded-full ..." src="{{profile.image}}" alt=""></div>
 </div>
 <!-- Recent posts -->
-<div class="container2 mt-[55px] bg-[#EDF7FA] flex pb-[33px]">
+<div class="bg-[#EDF7FA] py-[10px] mt-[90px]"><p class="text-[13px] text-[blue] ml-[1px] mt-[18px]"><a class="ml-[90px]" href="blog">Xem thêm</a></p></div>
+<div class="container2 bg-[#EDF7FA] flex pb-[33px]">
+    
     <div class="posts w-[335px] ml-[90px]" *ngFor="let blog of bloglist">
         <article>
-            <div class="bg-[#EDF7FA] h-[39px]"><p class="text-[18px] ml-[1px] mt-[18px]">Recent posts</p></div>
+            
             <a href="blog/{{blog.id}}">
                 <div class="bg-white pl-[20px] h-[200px] rounded-md py-[17px]" >
                     <h1 class="font-bold text-[20px]">{{blog.name}}</h1>
-                    <p class="mt-[20px] mb-[11px]">12 Feb 2020 <span class="mx-[11px]">|</span> <span>Design, Patteern</span></p> 
-                    <p class="text-[13px] w-[310px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                   
+                    <p class="text-[13px] w-[310px] mt-[25px]">{{blog.desc}}</p>
                 </div>
             </a>
         </article>
@@ -36,14 +38,16 @@
 <!-- LIST Products -->
 <div class=" ml-[117px] ">
     <div>
-        <p class="text-[18px] mt-[20px] mb-[20px]">Featured works</p>
+        <p class="text-[18px] mt-[50px] mb-[20px]">Kinh nghiệm làm việc</p>
     </div>
-    <div class="my-[20px]" *ngFor="let work of worklist ">
+    <div class="my-[90px]" *ngFor="let work of categories ">
         <a class="container3 flex .col-md-12" href="works/{{work.id}}/detail">
             <div class="imagework w-[25%] mt-[10px]"><img class="imagework w-[196px] h-[145px] rounded-md" src="{{work.image}}" alt=""></div>
             <div class="w-[75%] ml-[12px]">
                 <h1 class="text-[23px] font-bold text-[#142850]">{{work.name}}</h1>
-                <button class="bg-[#142850] rounded-xl text-white font-bold text-center px-[7px] mt-[15px]">2020</button> <span class="ml-[15px]">Dashboard</span>
+             
+                <p class="my-[15px]">Thời gian: {{work.starttime}}<span class="mx-[5px]">-</span><span>{{work.endtime}}</span></p>
+                <p class="mt-[5px]">Vị trí: {{work.location}}</p>
                 <p class="descwork text-[13px] w-[470px] mt-[15px]">{{work.desc}}</p>
             </div>
         </a>

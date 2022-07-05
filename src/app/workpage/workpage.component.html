@@ -1,10 +1,10 @@
 
 <div class="ml-[187px]">
-    <ul>
+    <!-- <ul>
         <li *ngFor="let cate of categories"><a href="category/{{cate.id}}">{{cate.name}}</a></li>
-    </ul>
-    <h1 class="font-bold text-[32px] mt-[82px] mb-[20px]">Work</h1>
-    <div  *ngFor="let works of worklist">
+    </ul> -->
+    <h1 class="font-bold text-[32px] mt-[82px] mb-[20px]">Kinh nghiệm làm việc</h1>
+    <div class="mt-[80px]" *ngFor="let works of categories">
         <a class="flex" href="/works/{{works.id}}/detail">
             <div class="w-[28%] mt-[10px]"><img class="w-[308px] h-[145px] rounded-md" src="{{works.image}}" alt=""></div>
             <div class="w-[72%] ml-[12px]">

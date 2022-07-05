@@ -10,7 +10,13 @@ import { Icategory } from '../model/category';
 })
 export class CategoryAddComponent implements OnInit {
   categories : Icategory = {
-    name:""
+    name:"",
+    image:"",
+    desc:"",
+    starttime:"",
+    endtime:"",
+    location:"",
+    linkgithub:""
   }
   constructor(private router : Router, private categoriessv : CategoriesService) { }
 

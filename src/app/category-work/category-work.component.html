@@ -1,15 +1,15 @@
 <div class="ml-[187px]">
-    <ul>
-        <li *ngFor="let cates of categories"><a href="category/{{cates.id}}">{{cates.name}}</a></li>
-    </ul>
+  
     <h1 class="font-bold text-[32px] mt-[82px] mb-[20px]">{{workcate.name}}</h1>
-    <div class="flex"*ngFor="let cate of workcate.works">
-        <div class="w-[28%] mt-[10px]"><img class="w-[198px] h-[145px] rounded-md" src="{{cate.image}}" alt=""></div>
-        <div class="w-[72%] ml-[12px]">
-            <h1 class="text-[23px] font-bold text-[#142850]">{{cate.name}}</h1>
-            <a href="/works/{{cate.id}}/detail"><button class="bg-[#142850] rounded-xl text-white font-bold text-center px-[7px] mt-[15px]">2020</button> <span class="ml-[15px]">Dashboard</span></a>
-            <p class="text-[13px] w-[330px] mt-[15px]">{{cate.desc}}</p>
-        </div>
+     <p class="">Thời gian: {{workcate.starttime}} đến {{workcate.endtime}}</p>
+    <p class="text-[12px] mt-[20px]">Vị trí: {{workcate.location}} </p>
+    <p>{{workcate.desc}}</p>
+   
+    <img class="w-[545px] h-[365px] mt-[40px]" src="" alt="">
+    <div class="mt-[50px]"*ngFor="let cate of workcate.works" >
+        <h1 class="text-[23px] font-bold">{{cate.name}}</h1>
+        <p class="text-[13px] mt-[20px] w-[520px]">{{cate.desc}}</p>
+        <img class="mt-[20px] w-[545px]" src="{{cate.image}}" alt="">
     </div>
     <hr class="mt-[35px] mb-[20px] w-[500px]">
 </div>

@@ -22,7 +22,6 @@ import { ProductComponent } from './product/product.component';
 // import { ProductComponent } from './product/product.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
-import { WorkDetailComponent } from './work-detail/work-detail.component';
 import { WorkpageComponent } from './workpage/workpage.component';
 import { WorksEditComponent } from './works-edit/works-edit.component';
 
@@ -42,12 +41,9 @@ const routes: Routes = [
         path: "blog/:id",
         component: BlogDetailComponent
       },
+     
       {
         path: "works/:id/detail",
-        component: WorkDetailComponent
-      },
-      {
-        path: "category/:id",
         component: CategoryWorkComponent
       },
       {

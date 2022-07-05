@@ -23,7 +23,15 @@ export class SigninComponent implements OnInit {
     this.userservice.signin(this.users).subscribe(data =>{
       console.log("đang nhâp thành công")
       localStorage.setItem('user', JSON.stringify(data))
+     
+      const id = JSON.parse(localStorage.getItem("user") || '{}').user.id;
+      console.log(id)
+      if(id == 1){
+     this.router.navigateByUrl('admin')
+      
+     }else{
       this.router.navigateByUrl('/')
+     }
     })
     console.log(this.users)
   }

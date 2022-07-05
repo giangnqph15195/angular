@@ -30,4 +30,7 @@ export class MyserviceService {
   updateProduct(product: IProduct){
     return this.http.put(`${this.url}/${product.id}`, product)
   }
+  getdetailproduct(id:number){
+    return this.http.get(`${this.url}/${id}?_embed=productdetail`)
+  }
 }

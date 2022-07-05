@@ -1,16 +1,32 @@
 {
   "products": [
     {
-      "name": "sản phẩm mới nhất update 10 vạn lần",
+      "name": "Mục tiêu nghề nghiệp",
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
-      "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
-      "id": 9
+      "desc": "Nói về mục tiêu của bạn thân có 2 mục tiêu quan trọng đó là: Mục tiêu dài hạn và Mục tiêu ngắn hạn.",
+      "id": "9"
     },
     {
-      "name": "Giang 14432132",
+      "name": "Các kỹ năng",
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1649084801/asm/ltkyi6m8mrypop4bhfom.jpg",
-      "desc": "      \"content\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloribus, veniam laborum quo dolores ducimus fuga est! Ullam iure illum, consequuntur rerum, laboriosam fuga porro praesentium sit fugiat quod magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloribus, veniam laborum quo dolores ducimus fuga est! Ullam iure illum, consequuntur rerum, laboriosam fuga porro praesentium sit fugiat quod magni",
-      "id": 10
+      "desc": "Có 3 kỹ chính đó là: Tin học văn phòng, tiếng anh và ngôn ngữ chuyên ngành",
+      "id": "10"
+    },
+    {
+      "name": "Chứng chỉ",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1649084801/asm/ltkyi6m8mrypop4bhfom.jpg",
+      "desc": "9/2020 - 12/2021: English Topnotch 2.2 tại Trường Cao đẳng Thực hành FPT Polytechnic Hà Nội(tương đương Ielts 4.5)",
+      "id": "11"
+    },{
+      "name": "Sở thích",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1649084801/asm/ltkyi6m8mrypop4bhfom.jpg",
+      "desc": "Có 3 sở thích đó là: Đọc sách, đá bóng và chụp ảnh",
+      "id": "12"
+    },{
+      "name": "Giải thưởng",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1649084801/asm/ltkyi6m8mrypop4bhfom.jpg",
+      "desc": "Đạt danh hiệu sinh viên giỏi kỳ spring năm 2022",
+      "id": "13"
     }
   ],
   "users": [
@@ -42,23 +58,30 @@
   "works": [
     {
       "id": 2,
-      "name": "Font- end 2",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
-      "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
-      "categoryId": "2"
+      "name": "Trang chủ",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657039550/asm/Trang_ch%E1%BB%A7_gsnsp2.png",
+      "desc": "Hiện thị ra các sản phẩm và các danh mục sản phẩm.",
+      "categoryId": "1"
     },
     {
       "id": 4,
-      "name": "Font- end 4 update",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
-      "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
-      "categoryId": "3"
+      "name": "Trang chi tiết sản phẩm",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657039632/asm/chi_ti%E1%BA%BFt_s%E1%BA%A3n_ph%E1%BA%A9m_w4mcl9.png",
+      "desc": "Hiện thị ra sản phẩm có tên sản phẩm, chi tiết thành phần của sản phẩm, giá, size, số lượng và các sản phẩm liên quan. bạn có thể thêm sản phẩm vào giỏ hàng.",
+      "categoryId": "1"
+    },
+    {
+      "id": 7,
+      "name": "Trang đăng nhập và đăng ký",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657040138/asm/%C4%90%C4%83ng_nh%E1%BA%ADp_d%C4%83ng_k%C3%BD_kqyfo3.jpg",
+      "desc": "Có chức năng đăng ký, đang ký thành công chuyển sang trang đăng nhập, đăng nhập thành công thì chuyển qua trang chủ và có validate form.",
+      "categoryId": "1"
     },
     {
       "name": "Giang 69",
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1648567795/asm/icon_douong_wbuknx.png",
       "desc": "dsadsad",
-      "categoryId": "4",
+      "categoryId": "2",
       "id": 5
     },
     {
@@ -72,30 +95,50 @@
   "categories": [
     {
       "createdAt": "2022-02-28T08:00:17.994Z",
-      "name": "Danh muc 1",
+      "name": "Dự án PHP 1 ",
+      "image":"https://res.cloudinary.com/dkrifqhuk/image/upload/v1645019441/asm/icon_myi_bx755m.png",
+      "desc":"Xây dựng một trang website bán hàng (bán Pizza) với các chức năng. Front-end sử dụng HTML5&CSS3, Javascript và Bootstrapv5. Back-end sử dụng PHP.",
+      "starttime":"10/2021",
+      "endtime":"12/2021",
+      "location":"Full-stack",
+      "linkgithub":"ab",
       "id": "1"
     },
     {
       "createdAt": "2022-02-28T09:24:58.509Z",
-      "name": "Danh muc 2",
+      "name": "Dự án ôn Typesript",
+      "image":"https://res.cloudinary.com/dkrifqhuk/image/upload/v1645019441/asm/icon_myi_bx755m.png",
+      "desc":"Xây dựng một trang website bán hàng (bán Pizza) với các chức năng. Front-end sử dụng React-TypeScript, taiwindcss, Bootstrapv5 và Ant Design. Back-end sử dụng NodeJs",
+      "starttime":"3/2022",
+      "endtime":"4/2022",
+      "location":"Full-stack",
+      "linkgithub":"ab",
       "id": "2"
-    },
-    {
-      "createdAt": "2022-02-28T11:17:33.898Z",
-      "name": "Danh muc 3",
-      "id": "3"
-    },
-    {
-      "createdAt": "2022-02-28T01:16:26.099Z",
-      "name": "Danh muc 4 update",
-      "id": "4"
     }
   ],
   "profile": {
     "id": 1,
     "name": "Giang",
     "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1655185730/asm/241123593_245813547448231_984689905362080689_n_gyhid9.png",
-    "cv": "Font-end Devloper",
-    "desc": "Nghèo nhất "
-  }
+    "cv": "Thực tập sinh Front-end",
+    "desc": "Đang là sinh viên kỳ 6 của Trường Cao đẳng Thực hành FPT Polytechnic Hà Nội "
+  },
+
+  "productdetail":[
+      {
+        "id":1,
+        "name":"product detail 1",
+        "productId":"9"
+      },
+      {
+        "id":2,
+        "name":"product detail 2",
+        "productId":"9"
+      }, {
+        "id":3,
+        "name":"product detail 3",
+        "productId":"10"
+      }
+
+  ]
 }
