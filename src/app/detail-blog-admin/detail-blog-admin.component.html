@@ -8,7 +8,7 @@
             <td *ngIf="work.image"><img width="150" src="{{ work.image }}" alt=""></td>
             <td>{{ work.desc }}</td>
             <td>
-                <a href="admin/works/edit/{{work.id}}"><button class="btn btn-info">Edit</button></a>
+                <a href="admin/blog/edit/{{work.id}}"><button class="btn btn-info">Edit</button></a>
             </td>
             <td><button class="btn btn-info" (click)="remove(work.id)">Delete</button> </td>
         </tr>

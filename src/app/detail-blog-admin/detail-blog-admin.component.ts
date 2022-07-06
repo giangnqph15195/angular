@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MyserviceService } from 'src/service/myservice.service';
+import { ProductsdetailService } from 'src/service/productsdetail.service';
 import { Iblog } from '../model/blog';
 import { IProduct } from '../model/Products';
 
@@ -12,7 +13,7 @@ import { IProduct } from '../model/Products';
 export class DetailBlogAdminComponent implements OnInit {
   blog!: Iblog[] | any
   blogdetail! : IProduct
-  constructor(private blogsv : MyserviceService, private route : ActivatedRoute) { }
+  constructor(private blogsv : MyserviceService,private blogdetails: ProductsdetailService , private route : ActivatedRoute) { }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')!
@@ -25,7 +26,9 @@ export class DetailBlogAdminComponent implements OnInit {
     })
   }
   remove(id:number){
-    
+    this.blogdetails.remove(id).subscribe(data=>{
+      console.log("yhanhf cong")
+    })
   }
   
 

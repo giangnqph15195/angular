@@ -14,6 +14,7 @@ import { CategoryWorkComponent } from './category-work/category-work.component';
 import { DetailBlogAdminComponent } from './detail-blog-admin/detail-blog-admin.component';
 import { DetailPDComponent } from './detail-pd/detail-pd.component';
 import { DetailWorkAdminComponent } from './detail-work-admin/detail-work-admin.component';
+import { EditBlogComponent } from './edit-blog/edit-blog.component';
 import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LayoutsAdminComponent } from './layuots/layuot-admin/layouts-admin/layouts-admin.component';
@@ -21,6 +22,7 @@ import { LayuotsWebComponent } from './layuots/layuot-web/layuots-web/layuots-we
 import { ProductAddComponent } from './product-add/product-add.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductComponent } from './product/product.component';
+import { ProfileComponent } from './profile/profile.component';
 // import { HeaderComponent } from './header/header.component';
 // import { ProductComponent } from './product/product.component';
 import { SigninComponent } from './signin/signin.component';
@@ -72,8 +74,10 @@ const routes: Routes = [
       {path:"products/add", component: ProductAddComponent},
       {path:"products/edit/:id", component: ProductEditComponent},
       {path:"blogdetail/add", component: AddDetailBlogComponent},
+      {path:"profile", component: ProfileComponent},
 
       {path: "blog/:id", component: DetailBlogAdminComponent},
+      {path: "blog/edit/:id", component: EditBlogComponent},
       {path: "works/add", component: AddWorksComponent},
       {path:"works/edit/:id", component: WorksEditComponent},
 

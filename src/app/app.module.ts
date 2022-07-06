@@ -31,6 +31,8 @@ import { CategoriesEditComponent } from './categories-edit/categories-edit.compo
 import { DetailWorkAdminComponent } from './detail-work-admin/detail-work-admin.component';
 import { DetailBlogAdminComponent } from './detail-blog-admin/detail-blog-admin.component';
 import { AddDetailBlogComponent } from './add-detail-blog/add-detail-blog.component';
+import { EditBlogComponent } from './edit-blog/edit-blog.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -59,7 +61,9 @@ import { AddDetailBlogComponent } from './add-detail-blog/add-detail-blog.compon
     CategoriesEditComponent,
     DetailWorkAdminComponent,
     DetailBlogAdminComponent,
-    AddDetailBlogComponent
+    AddDetailBlogComponent,
+    EditBlogComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

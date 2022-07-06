@@ -155,15 +155,16 @@
   ],
   "profile": {
     "id": 1,
-    "name": "Giang",
+    "name": "Nguyễn Quý Giang",
     "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1655185730/asm/241123593_245813547448231_984689905362080689_n_gyhid9.png",
     "cv": "Thực tập sinh Front-end",
-    "desc": "Đang là sinh viên kỳ 6 của Trường Cao đẳng Thực hành FPT Polytechnic Hà Nội "
+    "desc": "Đang là sinh viên kỳ 6 của Trường Cao đẳng Thực hành FPT Polytechnic Hà Nội ",
+    "linkdowload": "111"
   },
   "productdetail": [
     {
       "id": 1,
-      "name": "Mục tiêu ngắn hạn",
+      "name": "Mục tiêu ngắn hạn ",
       "desc": "Anh yêu em nhiều lắm ",
       "productId": "9"
     },
@@ -199,18 +200,11 @@
       "id": 6
     },
     {
-      "name": "Chụp ảnh",
+      "name": "Chụp ảnh.",
       "image": "",
       "desc": "Thích chụp những bức ảnh phong cảnh.",
       "productId": "12",
       "id": 7
-    },
-    {
-      "name": "Chụp ảnh",
-      "image": "",
-      "desc": "Thích chụp những bức ảnh phong cảnh.",
-      "productId": "12",
-      "id": 8
     }
   ]
 }

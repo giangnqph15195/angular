@@ -1,0 +1,10 @@
+<p>profile works!</p>
+<form action="" #formAdd="ngForm" (ngSubmit)="onsubit()">
+    <input type="text" [(ngModel)]="profile.name" name="name"> <br>
+    <input type="text" [(ngModel)]="profile.image" name="image"> <br>
+    <input type="text" [(ngModel)]="profile.cv" name="cv"> <br>
+    <input type="text" [(ngModel)]="profile.desc" name="desc"> <br>
+    <input type="text" [(ngModel)]="profile.linkdowload" name="linkdowload"> <br>
+    <button>edit</button>
+  
+</form>
