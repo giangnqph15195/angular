@@ -1,0 +1,16 @@
+<p>detail-work-admin works!</p>
+<div><a href="admin/works/add">Add</a></div>
+<table class="table table-bordered">
+    <tbody>
+        <tr *ngFor="let cate of workcate.works; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ cate.name }}</td>
+            <td><img width="150" src="{{ cate.image }}" alt=""></td>
+            <td>{{ cate.desc }}</td>
+            <td>
+                <a href="admin/works/edit/{{cate.id}}"><button class="btn btn-info">Edit</button></a>
+            </td>
+            <td><button class="btn btn-info" (click)="remove(cate.id)">Delete</button> </td>
+        </tr>
+    </tbody>
+</table>

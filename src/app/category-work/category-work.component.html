@@ -5,7 +5,7 @@
     <p class="text-[12px] mt-[20px]">Vị trí: {{workcate.location}} </p>
     <p>{{workcate.desc}}</p>
    
-    <img class="w-[545px] h-[365px] mt-[40px]" src="" alt="">
+    <img class="w-[545px] h-[365px] mt-[40px]" src="{{workcate.image}}" alt="">
     <div class="mt-[50px]"*ngFor="let cate of workcate.works" >
         <h1 class="text-[23px] font-bold">{{cate.name}}</h1>
         <p class="text-[13px] mt-[20px] w-[520px]">{{cate.desc}}</p>

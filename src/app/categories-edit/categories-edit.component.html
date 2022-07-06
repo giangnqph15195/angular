@@ -2,7 +2,14 @@
 <form action="" #formAdd="ngForm">
     <div>
         <p>Name</p>
-        <input type="text" [(ngModel)]="cate.name" name="name"  id="">
+        <input type="text" [(ngModel)]="cate.name" name="name"  id="">  <br>
+        <input type="text" [(ngModel)]="cate.image" name="image"  id=""> <br>
+        <input type="text" [(ngModel)]="cate.starttime" name="starttime"  id=""> <br>
+        <input type="text" [(ngModel)]="cate.endtime" name="endtime"  id=""> <br>
+        <input type="text" [(ngModel)]="cate.location" name="location"  id=""> <br>
+        <input type="text" [(ngModel)]="cate.linkgithub" name="linkgithub"  id=""> <br>
+        <input type="text" [(ngModel)]="cate.desc" name="desc"  id=""> <br>
+
     </div>
     <button (click)="onSubmit()" class="btn btn-info">Edit</button>
 </form>

@@ -28,6 +28,8 @@ import { CategoriesComponent } from './categories/categories.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoriesEditComponent } from './categories-edit/categories-edit.component';
+import { BlogComponent } from './blog/blog.component';
+import { DetailWorkAdminComponent } from './detail-work-admin/detail-work-admin.component';
 
 
 @NgModule({
@@ -53,7 +55,9 @@ import { CategoriesEditComponent } from './categories-edit/categories-edit.compo
     CategoriesComponent,
     BlogDetailComponent,
     CategoryAddComponent,
-    CategoriesEditComponent
+    CategoriesEditComponent,
+    BlogComponent,
+    DetailWorkAdminComponent
   ],
   imports: [
     BrowserModule,

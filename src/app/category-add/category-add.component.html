@@ -2,7 +2,13 @@
 <form #formAdd="ngForm" (ngSubmit)="onSubit()" action="">
     <div>
         <p>Name</p>
-        <input type="text" name="" [(ngModel)]="categories.name" name="name" #name="ngModel" required minlength="5">
+        <input type="text" name="" [(ngModel)]="categories.name" name="name" #name="ngModel" required minlength="5"> <br>
+        <input type="text" [(ngModel)]="categories.image" name="image"  id=""> <br>
+        <input type="text" [(ngModel)]="categories.starttime" name="starttime"  id=""> <br>
+        <input type="text" [(ngModel)]="categories.endtime" name="endtime"  id=""> <br>
+        <input type="text" [(ngModel)]="categories.location" name="location"  id=""> <br>
+        <input type="text" [(ngModel)]="categories.linkgithub" name="linkgithub"  id=""> <br>
+        <input type="text" [(ngModel)]="categories.desc" name="desc"  id=""> <br>
     </div>
     <button class="btn btn-info">Add</button>
 </form>
