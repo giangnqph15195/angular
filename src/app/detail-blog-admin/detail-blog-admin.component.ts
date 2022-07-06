@@ -5,11 +5,11 @@ import { Iblog } from '../model/blog';
 import { IProduct } from '../model/Products';
 
 @Component({
-  selector: 'app-blog-detail',
-  templateUrl: './blog-detail.component.html',
-  styleUrls: ['./blog-detail.component.css']
+  selector: 'app-detail-blog-admin',
+  templateUrl: './detail-blog-admin.component.html',
+  styleUrls: ['./detail-blog-admin.component.css']
 })
-export class BlogDetailComponent implements OnInit {
+export class DetailBlogAdminComponent implements OnInit {
   blog!: Iblog[] | any
   blogdetail! : IProduct
   constructor(private blogsv : MyserviceService, private route : ActivatedRoute) { }
@@ -23,6 +23,9 @@ export class BlogDetailComponent implements OnInit {
       this.blog = data
       console.log(data)
     })
+  }
+  remove(id:number){
+    
   }
   
 

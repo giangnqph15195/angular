@@ -4,13 +4,13 @@ import { AdminGuard } from 'src/service/guard/admin.guard';
 import { AddWorksComponent } from './add-works/add-works.component';
 import { AdminWorksComponent } from './admin-works/admin-works.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
-import { BlogComponent } from './blog/blog.component';
 // import { AdminWorksComponent } from './admin-works/admin-works.component';
 import { BlogpageComponent } from './blogpage/blogpage.component';
 import { CategoriesEditComponent } from './categories-edit/categories-edit.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryAddComponent } from './category-add/category-add.component';
 import { CategoryWorkComponent } from './category-work/category-work.component';
+import { DetailBlogAdminComponent } from './detail-blog-admin/detail-blog-admin.component';
 import { DetailPDComponent } from './detail-pd/detail-pd.component';
 import { DetailWorkAdminComponent } from './detail-work-admin/detail-work-admin.component';
 import { HeaderComponent } from './header/header.component';
@@ -71,7 +71,7 @@ const routes: Routes = [
       {path:"products/add", component: ProductAddComponent},
       {path:"products/edit/:id", component: ProductEditComponent},
 
-      {path: "blog", component: BlogComponent},
+      {path: "blog/:id", component: DetailBlogAdminComponent},
       {path: "works/add", component: AddWorksComponent},
       {path:"works/edit/:id", component: WorksEditComponent},
 

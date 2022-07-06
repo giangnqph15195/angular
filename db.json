@@ -29,6 +29,12 @@
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1649084801/asm/ltkyi6m8mrypop4bhfom.jpg",
       "desc": "Đạt danh hiệu sinh viên giỏi kỳ spring năm 2022",
       "id": "13"
+    },
+    {
+      "name": "Giang 69",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1645019441/asm/icon_myi_bx755m.png",
+      "desc": "Tôm và Mỳ",
+      "id": "LlIe4Aq"
     }
   ],
   "users": [
@@ -120,6 +126,13 @@
       "desc": "Tôm và Mỳ",
       "categoryId": "1",
       "id": 11
+    },
+    {
+      "name": "Giang 69",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1645019441/asm/icon_myi_bx755m.png",
+      "desc": "Tôm và Mỳ",
+      "categoryId": "1",
+      "id": 12
     }
   ],
   "categories": [
@@ -156,12 +169,13 @@
   "productdetail": [
     {
       "id": 1,
-      "name": "product detail 1",
+      "name": "Mục tiêu ngắn hạn",
+      "desc": "Anh yêu em nhiều lắm ",
       "productId": "9"
     },
     {
       "id": 2,
-      "name": "product detail 2",
+      "name": "Mục tiêu dài hạn.",
       "productId": "9"
     },
     {

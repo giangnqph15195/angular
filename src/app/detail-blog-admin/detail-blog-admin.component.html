@@ -1,12 +1,11 @@
-<!-- <p>products works!</p> -->
-<h1 class="text-[20px] text-center font-bold"> Works</h1>
-<button class="btn btn-info float-right mr-[20px] my-[20px]" ><a href="admin/works/add">Add</a></button>
+<p>detail-blog-admin works!</p>
+<button class="btn btn-info float-right mr-[20px] my-[20px]" ><a href="admin/blogdetail/add">Add</a></button>
 <table class="table table-bordered mb-[50px]">
     <tbody>
-        <tr *ngFor="let work of worklist; let i = index">
+        <tr *ngFor="let work of blog.productdetail let i = index">
             <td>{{ i + 1 }}</td>
             <td>{{ work.name }}</td>
-            <td><img src="{{ work.image }}" alt=""></td>
+            <td *ngIf="work.image">{{ work.image }}</td>
             <td>{{ work.desc }}</td>
             <td>
                 <a href="admin/works/edit/{{work.id}}"><button class="btn btn-info">Edit</button></a>
