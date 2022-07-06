@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminGuard } from 'src/service/guard/admin.guard';
+import { AddDetailBlogComponent } from './add-detail-blog/add-detail-blog.component';
 import { AddWorksComponent } from './add-works/add-works.component';
 import { AdminWorksComponent } from './admin-works/admin-works.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
@@ -70,6 +71,7 @@ const routes: Routes = [
       {path:"products", component: ProductComponent},
       {path:"products/add", component: ProductAddComponent},
       {path:"products/edit/:id", component: ProductEditComponent},
+      {path:"blogdetail/add", component: AddDetailBlogComponent},
 
       {path: "blog/:id", component: DetailBlogAdminComponent},
       {path: "works/add", component: AddWorksComponent},

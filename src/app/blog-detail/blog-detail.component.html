@@ -5,7 +5,7 @@
     <div class="mt-[50px]" *ngFor="let bloglt of blog.productdetail">
         <h1 class="text-[23px] font-bold">{{bloglt.name}}</h1>
         <img width="300" *ngIf="bloglt.image!" src="{{bloglt.image}}" alt="">
-        <p class="text-[13px] mt-[20px] w-[520px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <p class="text-[13px] mt-[20px] w-[520px]">{{bloglt.desc}}</p>
         
         <img class="mt-[20px] w-[545px]" src="" alt="">
     </div>

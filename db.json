@@ -29,12 +29,6 @@
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1649084801/asm/ltkyi6m8mrypop4bhfom.jpg",
       "desc": "Đạt danh hiệu sinh viên giỏi kỳ spring năm 2022",
       "id": "13"
-    },
-    {
-      "name": "Giang 69",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1645019441/asm/icon_myi_bx755m.png",
-      "desc": "Tôm và Mỳ",
-      "id": "LlIe4Aq"
     }
   ],
   "users": [
@@ -150,7 +144,7 @@
     {
       "createdAt": "2022-02-28T09:24:58.509Z",
       "name": "Dự án ôn Typesript",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1645019441/asm/icon_myi_bx755m.png",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657079684/asm/D%E1%BB%B1_%C3%A1n_typescript_ozjo30.jpg",
       "desc": "Xây dựng một trang website bán hàng (bán Pizza) với các chức năng. Front-end sử dụng React-TypeScript, taiwindcss, Bootstrapv5 và Ant Design. Back-end sử dụng NodeJs",
       "starttime": "3/2022",
       "endtime": "4/2022",
@@ -182,6 +176,41 @@
       "id": 3,
       "name": "product detail 3",
       "productId": "10"
+    },
+    {
+      "name": "Đạt danh hiệu sinh viên giỏi kỳ spring 2020",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657081577/asm/Untitled-1_t6ocfe.jpg",
+      "desc": "",
+      "productId": "13",
+      "id": 4
+    },
+    {
+      "name": "Đá bóng",
+      "image": "",
+      "desc": "Tham gia giải bóng tại trường 2019 và giải thôn năm 2020.",
+      "productId": "12",
+      "id": 5
+    },
+    {
+      "name": "Đọc sách",
+      "image": "",
+      "desc": "Thích đọc những quyển sách về tâm lý như: sách người nam châm.",
+      "productId": "12",
+      "id": 6
+    },
+    {
+      "name": "Chụp ảnh",
+      "image": "",
+      "desc": "Thích chụp những bức ảnh phong cảnh.",
+      "productId": "12",
+      "id": 7
+    },
+    {
+      "name": "Chụp ảnh",
+      "image": "",
+      "desc": "Thích chụp những bức ảnh phong cảnh.",
+      "productId": "12",
+      "id": 8
     }
   ]
 }
