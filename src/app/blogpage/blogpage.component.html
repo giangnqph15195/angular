@@ -1,9 +1,8 @@
 <div class="ml-[93px]">
-    <h1 class="font-bold text-[33px] mt-[80px] mb-[40px]">Blog</h1>
+    <h1 class="font-bold text-orange-600 text-[53px] mt-[80px] mb-[40px]">Thông tin cá nhân</h1>
     <div class="blog w-[500px] mb-[50px]" *ngFor="let blog of bloglist">
         <a href="blog/{{blog.id}}">
             <h1 class="font-bold text-[23px]">{{blog.name}}</h1>
-            <p class="mt-[5px]">12 Feb 2019 <span class="mx-[15px]">|</span><span>Express, Handlebars</span></p>
             <p class="text-[13px] mt-[8px]">{{blog.desc}}</p>
             <hr class="w-[550px] mt-[20px] mb-[22px]">
         </a>

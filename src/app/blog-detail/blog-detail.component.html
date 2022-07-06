@@ -1,12 +1,14 @@
 <div class="ml-[187px] mb-[70px]">
-    <h1 class="font-bold text-[26px] w-[370px] mt-[75px]">{{blogdetail.name}}</h1>
-    <p class="text-[12px] mt-[20px]">{{blogdetail.desc}}</p>
+    <h1 class="font-bold text-orange-600 text-[36px] w-[370px] mt-[75px]">{{blogdetail.name}}</h1>
+    <p class="text-[18px] mt-[20px] mb-[50px]">{{blogdetail.desc}}</p>
         <!-- Heading  -->
-    <div class="mt-[50px]" *ngFor="let bloglt of blog.productdetail">
+    <div class="mt-[20px]" *ngFor="let bloglt of blog.productdetail">
         <h1 class="text-[23px] font-bold">{{bloglt.name}}</h1>
-        <img width="300" *ngIf="bloglt.image!" src="{{bloglt.image}}" alt="">
+        <img class="mt-[50px]" width="400" *ngIf="bloglt.image!" src="{{bloglt.image}}" alt="">
         <p class="text-[13px] mt-[20px] w-[520px]">{{bloglt.desc}}</p>
         
         <img class="mt-[20px] w-[545px]" src="" alt="">
+        <hr class="w-[500px] mt-[px]">
     </div>
+    
 </div>

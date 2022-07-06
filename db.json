@@ -1,6 +1,12 @@
 {
   "products": [
     {
+      "name": "Thông tin bản thân.",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1655185730/asm/241123593_245813547448231_984689905362080689_n_gyhid9.png",
+      "desc": "Tên: Nguyễn Quý Giang",
+      "id": "8"
+    },
+    {
       "name": "Mục tiêu nghề nghiệp",
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1654924637/asm/IMG_8300_ncekhq.jpg",
       "desc": "Nói về mục tiêu của bạn thân có 2 mục tiêu quan trọng đó là: Mục tiêu dài hạn và Mục tiêu ngắn hạn.",
@@ -102,15 +108,15 @@
     },
     {
       "name": "Trang chủ.",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1648567795/asm/icon_douong_wbuknx.png",
-      "desc": "Anh yêu em nhiều lắm ",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657086156/asm/trang_ch%E1%BB%A7_gflipw.png",
+      "desc": "Hiên thị các sản phẩm và danh mục sản phẩm.",
       "categoryId": "2",
       "id": 5
     },
     {
-      "name": "Giang 69",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1645019441/asm/icon_myi_bx755m.png",
-      "desc": "Để nói về sự phong phóng hay giàu có trong ẩm thực thì Mỹ không được đánh giá cao dù trong ẩm thực châu Âu hay châu Á. Tuy nhiên, cũng không thể bỏ qua ẩm thực Mỹ được, bởi nó có sự đặc biệt và khác biệt khiến nhiều người phải trầm trồ.",
+      "name": "Trang chi tiết sản phẩm.",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657093832/asm/chi_ti%E1%BA%BFt_s%E1%BA%A3n_ph%E1%BA%A9m_jhdt4l.png",
+      "desc": "Hiện thị chi tiết sản phẩm có tên, ảnh, giá và số lượng để thêm sản phẩm vào giỏ hàng.",
       "categoryId": "2",
       "id": 6
     },
@@ -127,6 +133,41 @@
       "desc": "Tôm và Mỳ",
       "categoryId": "1",
       "id": 12
+    },
+    {
+      "name": "Trang giỏ hàng.",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657093909/asm/gi%E1%BB%8F_h%C3%A0ng_n4xv65.png",
+      "desc": "Khách hàng có thể xem những giản phẩm trong giỏ hàng và xóa những sản phẩm không cần. có chức năng thanh toán và yêu cầu khách hàng điền thông tin vào form,  có validate form.",
+      "categoryId": "2",
+      "id": 13
+    },
+    {
+      "name": "Trang đơn hàng.",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657094124/asm/Qu%E1%BA%A3n_l%C3%BD_%C4%91%C6%A1n_h%C3%A0ng_ng%C6%B0%E1%BB%9Di_d%C3%B9ng_ggpc92.png",
+      "desc": "Khách hàng có thể xem thông tin đơn hàng và có thể hủy đơn hàng. và theo dõi được trạng thái đơn hàng.",
+      "categoryId": "2",
+      "id": 14
+    },
+    {
+      "name": "Trang đăng ký và trang đăng nhập.",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657095111/asm/%C4%90%E1%BA%AFng_k%C3%BD_%C4%91%C4%83ng_nh%E1%BA%ADp_e9caja.jpg",
+      "desc": "Khi đăng ký thành công thì chuyển đến trang đăng nhập và khi đăng nhập thành công thì chuyển về trang chủ.khách hàng có thể đăng ký và đăng nhập để có thể mua hàng.",
+      "categoryId": "2",
+      "id": 15
+    },
+    {
+      "name": "Trang quản trị.",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657095403/asm/Qu%E1%BA%A3n_tr%E1%BB%8B_vk4uik.png",
+      "desc": "Quản lý tất cả sản phẩm, danh mục sản phẩm, tài khoản, đơn hàng.",
+      "categoryId": "2",
+      "id": 16
+    },
+    {
+      "name": "Trang quản lý đơn hàng.",
+      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657095517/asm/qu%E1%BA%A3n_l%C3%BD_%C4%91%C6%A1n_h%C3%A0ng_j34bis.png",
+      "desc": "Hiện thị thông tin sản phẩm, số lượng, thông tin khách hàng, trạng thái đơn hàng và chỉnh sửa trạng thái đơn hàng.",
+      "categoryId": "2",
+      "id": 17
     }
   ],
   "categories": [
@@ -159,24 +200,26 @@
     "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1655185730/asm/241123593_245813547448231_984689905362080689_n_gyhid9.png",
     "cv": "Thực tập sinh Front-end",
     "desc": "Đang là sinh viên kỳ 6 của Trường Cao đẳng Thực hành FPT Polytechnic Hà Nội ",
-    "linkdowload": "111"
+    "linkdowload": "https://drive.google.com/u/0/uc?id=1NJaS6tg5qYqwgV2Ml70uajRjCCHlm1fv&export=download"
   },
   "productdetail": [
     {
       "id": 1,
       "name": "Mục tiêu ngắn hạn ",
-      "desc": "Anh yêu em nhiều lắm ",
+      "desc": "Trở thành nhân viên của công ty và tìm tòi học hỏi thêm kinh nghiệm làm việc.",
       "productId": "9"
     },
     {
       "id": 2,
       "name": "Mục tiêu dài hạn.",
-      "productId": "9"
+      "productId": "9",
+      "desc": "Cống găn phát triển để được thăng chức và nâng cao kiến thức, kinh nghiệm giúp công ty phát triển hơn."
     },
     {
       "id": 3,
-      "name": "product detail 3",
-      "productId": "10"
+      "name": "Tin học văn phòng.",
+      "productId": "10",
+      "desc": "Sử dụng thành thạo các công cụ Word, Excel, Power Point."
     },
     {
       "name": "Đạt danh hiệu sinh viên giỏi kỳ spring 2020",
@@ -205,6 +248,55 @@
       "desc": "Thích chụp những bức ảnh phong cảnh.",
       "productId": "12",
       "id": 7
+    },
+    {
+      "name": "Tiếng Anh",
+      "image": "",
+      "desc": "Khả năng giao tiếp Tiếng Anh ở mức trung bình. Khả năng đọc viết Tiếng Anh ở mức khá.",
+      "productId": "10",
+      "id": 8
+    },
+    {
+      "name": "Ngôn ngữ chuyền ngành",
+      "image": "",
+      "desc": "HTML3&CSS5, Javascript, PHP, MYSQL, ReactJS,  NodeJS, Angular. Biết sử dụng: Boostraps v5, Taiwindcss, Ant Design.",
+      "productId": "10",
+      "id": 9
+    },
+    {
+      "name": "Học Trường Cao đẳng Thực hành FPT Polytechnic Hà Nội",
+      "image": "",
+      "desc": "Hiện tại đang là sinh viên kỳ 6.",
+      "productId": "8",
+      "id": 10
+    },
+    {
+      "name": "năm sinh",
+      "image": "",
+      "desc": "27/06/2002",
+      "productId": "8",
+      "id": 11
+    },
+    {
+      "name": "Nơi ở",
+      "image": "",
+      "desc": "Xuân Dương, Kim Lũ, Sóc Sơn, Hà Nội.",
+      "productId": "8",
+      "id": 12
+    },
+    {
+      "name": "Số điện thoại",
+      "image": "",
+      "desc": "0366608023",
+      "productId": "8",
+      "id": 13
+    },
+    {
+      "name": "Gmail",
+      "image": "",
+      "desc": "giangquy2706@gmmail.com",
+      "productId": "8",
+      "id": 14
     }
   ]
 }
