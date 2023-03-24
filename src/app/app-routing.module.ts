@@ -32,65 +32,66 @@ import { WorksEditComponent } from './works-edit/works-edit.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
     component: LayuotsWebComponent,
-    children:[
+    children: [
       {
-        path:"",
-        component: HomepageComponent
+        path: '',
+        component: HomepageComponent,
       },
       {
-        path: "blog",
-        component: BlogpageComponent
-      },{
-        path: "blog/:id",
-        component: BlogDetailComponent
-      },
-     
-      {
-        path: "works/:id/detail",
-        component: CategoryWorkComponent
+        path: 'blog',
+        component: BlogpageComponent,
       },
       {
-        path: "work",
-        component: WorkpageComponent
+        path: 'blog/:id',
+        component: BlogDetailComponent,
+      },
+
+      {
+        path: 'works/:id/detail',
+        component: CategoryWorkComponent,
+      },
+      {
+        path: 'work',
+        component: WorkpageComponent,
       },
       {
         path: 'signup',
-        component: SignupComponent
+        component: SignupComponent,
       },
       {
-        path: "signin",
-        component: SigninComponent
+        path: 'signin',
+        component: SigninComponent,
       },
-
-    ]
+    ],
   },
-  
-  
+
   {
-    path: "admin", canActivate:[AdminGuard],component:LayoutsAdminComponent, children:[
-      {path:"products", component: ProductComponent},
-      {path:"products/add", component: ProductAddComponent},
-      {path:"products/edit/:id", component: ProductEditComponent},
-      {path:"blogdetail/add", component: AddDetailBlogComponent},
-      {path:"profile", component: ProfileComponent},
+    path: 'admin',
+    component: LayoutsAdminComponent,
+    children: [
+      { path: 'products', component: ProductComponent },
+      { path: 'products/add', component: ProductAddComponent },
+      { path: 'products/edit/:id', component: ProductEditComponent },
+      { path: 'blogdetail/add', component: AddDetailBlogComponent },
+      { path: 'profile', component: ProfileComponent },
 
-      {path: "blog/:id", component: DetailBlogAdminComponent},
-      {path: "blog/edit/:id", component: EditBlogComponent},
-      {path: "works/add", component: AddWorksComponent},
-      {path:"works/edit/:id", component: WorksEditComponent},
+      { path: 'blog/:id', component: DetailBlogAdminComponent },
+      { path: 'blog/edit/:id', component: EditBlogComponent },
+      { path: 'works/add', component: AddWorksComponent },
+      { path: 'works/edit/:id', component: WorksEditComponent },
 
-      {path: "works" , component : CategoriesComponent},
-      {path:"workss/add", component: CategoryAddComponent},
-      {path:"workss/:id", component: DetailWorkAdminComponent},
-      {path:"categories/edit/:id", component: CategoriesEditComponent}
-    ]
+      { path: 'works', component: CategoriesComponent },
+      { path: 'workss/add', component: CategoryAddComponent },
+      { path: 'workss/:id', component: DetailWorkAdminComponent },
+      { path: 'categories/edit/:id', component: CategoriesEditComponent },
+    ],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
