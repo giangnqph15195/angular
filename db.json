@@ -120,20 +120,7 @@
       "categoryId": "2",
       "id": 6
     },
-    {
-      "name": "Giang 69",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1645019441/asm/icon_myi_bx755m.png",
-      "desc": "Tôm và Mỳ",
-      "categoryId": "1",
-      "id": 11
-    },
-    {
-      "name": "Giang 69",
-      "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1645019441/asm/icon_myi_bx755m.png",
-      "desc": "Tôm và Mỳ",
-      "categoryId": "1",
-      "id": 12
-    },
+ 
     {
       "name": "Trang giỏ hàng.",
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657093909/asm/gi%E1%BB%8F_h%C3%A0ng_n4xv65.png",
@@ -173,7 +160,7 @@
   "categories": [
     {
       "createdAt": "2022-02-28T08:00:17.994Z",
-      "name": "Dự án PHP 1 update",
+      "name": "Dự án PHP 1 ",
       "image": "https://res.cloudinary.com/dkrifqhuk/image/upload/v1657074273/asm/d%E1%BB%B1_%C3%A1n_php_1_y8xnr2.jpg",
       "desc": "Xây dựng một trang website bán hàng (bán Pizza) với các chức năng. Front-end sử dụng HTML5&CSS3, Javascript và Bootstrapv5. Back-end sử dụng PHP.",
       "starttime": "10/2021",
