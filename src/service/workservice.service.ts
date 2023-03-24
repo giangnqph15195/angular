@@ -7,7 +7,7 @@ import { Iworks } from 'src/app/model/works';
   providedIn: 'root',
 })
 export class WorkserviceService {
-  url: string = 'https://json-server-2esig0om8-giangnqph15195.vercel.app/works';
+  url: string = 'https://json-server-2esig0om8-giangnqph15195.vercel.app/';
   constructor(private http: HttpClient) {}
   getworks() {
     return this.http.get(`${this.url}works`);
